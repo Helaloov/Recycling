@@ -12,7 +12,8 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     public Button Nachricht;
-    public Button locations;
+    public Button Container;
+    public Button Abschnitt2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,25 +21,34 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // Intents
         final Intent nachricht = new Intent(this, Email.class );
-        final Intent locatin = new Intent(this, Location.class );
-        final Intent Container = new Intent(this, All_Container.class );
+        final Intent abschnitt2_Kleidung = new Intent(this, Abschnitt2_Kleidung.class );
+        final Intent container = new Intent(this, All_Container.class );
 
 
         Nachricht = (Button) findViewById(R.id.button3);
-        locations = (Button) findViewById(R.id.button1);
+        Container = (Button) findViewById(R.id.button1);
+        Abschnitt2= (Button) findViewById(R.id.button2);
 
 
-        Nachricht.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               startActivity(nachricht);
-           }
-       });
 
-        locations.setOnClickListener(new View.OnClickListener() {
+
+
+        Container.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(Container);
+                startActivity(container);
+            }
+        });
+        Nachricht.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(nachricht);
+            }
+        });
+        Abschnitt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(abschnitt2_Kleidung);
             }
         });
     }
