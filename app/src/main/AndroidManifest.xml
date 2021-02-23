@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Umfrage"></activity>
+        <activity android:name=".Quiz"></activity>
+        <activity android:name=".Umfrage" />
         <activity android:name=".Abschnitt2_Kleidung" />
         <activity android:name=".sec_Hand_Shop_Vorschlag" />
         <activity android:name=".Email" />

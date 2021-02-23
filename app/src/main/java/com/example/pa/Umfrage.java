@@ -21,6 +21,6 @@ public class Umfrage extends AppCompatActivity {
         wr.setWebViewClient(new WebViewClient());
         WebSettings tebSettings = wr.getSettings();
         tebSettings.setJavaScriptEnabled(true);
-        wr.loadUrl("www.youtube.com");
+        wr.loadUrl("https://helalloov.estbyani.com/survey/#/channel/212B7029");
     }
 }
