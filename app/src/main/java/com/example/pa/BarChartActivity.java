@@ -40,7 +40,7 @@ public class BarChartActivity extends AppCompatActivity {
 
         barChart.setFitBars(true);
         barChart.setData(barData);
-        barChart.getDescription().setText("Beispiel für BarChart");
+        barChart.getDescription().setEnabled(false);
         barChart.animateY(2000);
 
 

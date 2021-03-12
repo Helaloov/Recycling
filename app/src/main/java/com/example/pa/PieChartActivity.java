@@ -37,8 +37,9 @@ public class PieChartActivity extends AppCompatActivity {
         PieData pieData = new PieData(pieDataSet);
 
         pieChart.setData(pieData);
-        pieChart.getDescription().setEnabled(false);
+
         pieChart.setCenterText("Anzahl");
+        pieChart.getDescription().setText("Beschreibung");
         pieChart.animate();
 
 
