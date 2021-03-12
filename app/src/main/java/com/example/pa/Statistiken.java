@@ -2,7 +2,9 @@ package com.example.pa;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class Statistiken extends AppCompatActivity {
@@ -13,6 +15,34 @@ public class Statistiken extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statistiken);
 
+        final Intent barchart = new Intent(this, BarChartActivity.class);
+        final Intent piechart = new Intent(this, PieChartActivity.class);
+        final Intent radarchart = new Intent(this, RadarCharActivity.class);
+
+        b1 = (Button) findViewById(R.id.button1);
+        b2 = (Button) findViewById(R.id.button2);
+        b3 = (Button) findViewById(R.id.button3);
+
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(barchart);
+            }
+        });
+
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(piechart);
+            }
+        });
+
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(radarchart);
+            }
+        });
 
 
     }

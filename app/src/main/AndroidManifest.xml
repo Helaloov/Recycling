@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".PieChart"></activity>
+        <activity android:name=".BarChartActivity"></activity>
+        <activity android:name=".RadarCharActivity" />
+        <activity android:name=".PieChartActivity" />
         <activity android:name=".BarChart" />
         <activity android:name=".Statistiken" />
         <activity android:name=".Quiz" />

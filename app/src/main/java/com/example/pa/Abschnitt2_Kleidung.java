@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class Abschnitt2_Kleidung extends AppCompatActivity {
 
+    Button Statistiken;
     Button Quiz;
     Button Umfrage;
     @Override
@@ -16,11 +17,20 @@ public class Abschnitt2_Kleidung extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abschnitt2__kleidung);
 
+        final Intent statistiken = new Intent(this, Statistiken.class);
         final Intent quiz = new Intent(this, Quiz.class);
         final Intent umfrage = new Intent(this, Umfrage.class);
 
+        Statistiken = (Button) findViewById(R.id.button4);
         Quiz    = (Button) findViewById(R.id.button5);
         Umfrage = (Button) findViewById(R.id.button6);
+
+        Statistiken.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(statistiken);
+            }
+        });
 
         Quiz.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +38,7 @@ public class Abschnitt2_Kleidung extends AppCompatActivity {
                 startActivity(quiz);
             }
         });
+
         Umfrage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
