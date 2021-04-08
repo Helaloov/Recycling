@@ -23,6 +23,6 @@ public class HaufigeFragen extends AppCompatActivity {
             wr.setWebViewClient(new WebViewClient());
             WebSettings tebSettings = wr.getSettings();
             tebSettings.setJavaScriptEnabled(true);
-            wr.loadUrl("file:///android_asset/f.html");
+            wr.loadUrl("file:///android_asset/häufige_Fragen.html");
     }
 }

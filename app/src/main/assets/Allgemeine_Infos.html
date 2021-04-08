@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Accordions Pls</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./stylee.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app" id="app">
+  <div class="accordions">
+    <div class="container">
+     <center> <h1>Allgemeine Infos über</br>  Second-Hand</h1></center>
+    </div>
+    <section class="accordions__accordion">
+      <div class="accordions__header">
+        <div class="accordions__container container">
+          <h3 class="accordions__title">Teningen</h3>
+          <button class="accordions__button" v-on:click="toggleAccordion('Teningen')" v-bind:class="{ 'accordions__button--active': isOpen('Teningen') }">
+            <div class="accordions__icon">+</div>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Teningen') }"><p>Teningen (alemannisch Däninge) ist eine Gemeinde im Südwesten Baden-Württembergs. Sie liegt rund drei Kilometer westlich der Kreisstadt Emmendingen und rund 20 Kilometer nördlich von Freiburg im Breisgau.
+        </p></div>
+      </div>
+    </section>
+    <section class="accordions__accordion">
+      <div class="accordions__header">
+        <div class="accordions__container container">
+          <h3 class="accordions__title">Hamster</h3>
+          <button class="accordions__button" v-on:click="toggleAccordion('Hamster')" v-bind:class="{ 'accordions__button--active': isOpen('Hamster') }">
+            <div class="accordions__icon">+</div>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Hamster') }"><p>Die Hamster (Cricetinae) sind eine zu den Wühlern gehörende Unterfamilie der Mäuseartigen mit etwa 20 Arten.
+
+          Ihr Verbreitungsgebiet sind trockene und halbtrockene Gebiete Eurasiens. In Mitteleuropa kommt nur der Feldhamster vor. Fossil sind Hamster seit dem mittleren Miozän aus dem nördlichen Afrika und aus Eurasien bekannt. Die meisten Hamster sind nicht gefährdet. Eine Ausnahme bildet der Syrische Goldhamster, der wie einige andere Hamster als Versuchs- und Heimtier von Bedeutung ist.
+
+          Die maus- bis rattengroßen Hamster sind von wühlmausartiger Gestalt, jedoch meist mit kurzem Schwanz. Sie besitzen in jeder Kieferhälfte drei bewurzelte Backenzähne, deren Höcker in zwei Längsreihen angeordnet und durch Schmelzleisten meist kreuzweise miteinander verbunden sind. Die innen liegenden Backentaschen dienen dem Transport der Nahrung.
+        </p></div>
+      </div>
+    </section>
+    <section class="accordions__accordion">
+      <div class="accordions__header">
+        <div class="accordions__container container">
+          <h3 class="accordions__title">Syrien</h3>
+          <button class="accordions__button" v-on:click="toggleAccordion('Syrien')" v-bind:class="{ 'accordions__button--active': isOpen('Syrien') }">
+            <div class="accordions__icon">+</div>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Syrien') }"><p>Syrien (amtlich Syrische Arabische Republik, arabisch الجمهورية العربية السورية al-Dschumhūriyya al-ʿarabiyya as-sūriyya) ist ein Staat in Vorderasien und Teil des Maschrek. Syrien grenzt im Süden an Israel und Jordanien, im Westen an den Libanon und das Mittelmeer, im Norden an die Türkei und im Osten an den Irak. Die Insel Zypern befindet sich etwa 125 km Luftlinie von der syrischen Küste entfernt. Mit rund 185.000 km² ist Syrien ungefähr halb so groß wie Deutschland. Im Jahr 2010 lebten knapp 21 Mio. Menschen im Land, die meisten in Aleppo, der Hauptstadtregion von Damaskus, in Homs, Hama und Latakia.
+        </p></div>
+      </div>
+    </section>
+    <section class="accordions__accordion">
+      <div class="accordions__header">
+        <div class="accordions__container container">
+          <h3 class="accordions__title">Hamah</h3>
+          <button class="accordions__button" v-on:click="toggleAccordion('Hamah')" v-bind:class="{ 'accordions__button--active': isOpen('Hamah') }">
+            <div class="accordions__icon">+</div>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Hamah') }"><p>Die Stadt liegt am Orontes im Zentrum der mittelsyrischen Ackerbauebene an der Fernstraße zwischen Aleppo und Damaskus. Sie gehört zu den ältesten durchgehend besiedelten Städten Syriens. Die Einwohner Hamas stehen in dem Ruf, islamisch-konservativ zu sein.
+        </p></div>
+      </div>
+    </section>
+    <section class="accordions__accordion">
+      <div class="accordions__header">
+        <div class="accordions__container container">
+          <h3 class="accordions__title">Tesla</h3>
+          <button class="accordions__button" v-on:click="toggleAccordion('Tesla')" v-bind:class="{ 'accordions__button--active': isOpen('Tesla') }">
+            <div class="accordions__icon">+</div>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Tesla') }"><p>Tesla, Inc. (bis 1. Februar 2017 Tesla Motors) ist ein US-amerikanisches Unternehmen, das Elektroautos sowie Stromspeicher- und Photovoltaikanlagen produziert und vertreibt. Als Ziel des Unternehmens wird „die Beschleunigung des Übergangs zu nachhaltiger Energie“ genannt.[2] Der Firmenname ist an den Physiker und Erfinder Nikola Tesla angelehnt. Die Nutzungsrechte für die Marke Tesla erhielt das Unternehmen nach einer Übereinkunft mit der tschechischen Tesla Holding nach einem Markenrechtsstreit im Jahr 2010.[3]
+        </p></div>
+      </div>
+    </section>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script><script  src="./scriptt.js"></script>
+
+</body>
+</html>

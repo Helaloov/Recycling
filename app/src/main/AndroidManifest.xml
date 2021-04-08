@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".HaufigeFragen"></activity>
+        <activity android:name=".Allgemeine_Infos"></activity>
+        <activity android:name=".HaufigeFragen" />
         <activity android:name=".BarChartActivity" />
         <activity android:name=".RadarCharActivity" />
         <activity android:name=".PieChartActivity" />
