@@ -36,7 +36,7 @@ public class DetailActivity extends AppCompatActivity {
 
         String[] StadtParts = selectedShape.getName().split(",");
         String[] AdressParts = selectedShape.getAdress().split(",");
-        textView.setText(" Stadt: "+ StadtParts[0]+ "\n Art:    " + StadtParts[1] + "\n Straße: "+AdressParts[1] + "\n Anbieter: " + selectedShape.getAnbieter());
+        textView.setText("Stadt: "+ StadtParts[0]+ "\nArt:    " + StadtParts[1] + "\nStraße: "+AdressParts[1] + "\nAnbieter: " + selectedShape.getAnbieter());
         wr.setWebViewClient(new WebViewClient());
         WebSettings tebSettings = wr.getSettings();
         tebSettings.setJavaScriptEnabled(true);

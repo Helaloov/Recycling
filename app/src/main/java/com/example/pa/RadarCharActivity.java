@@ -24,30 +24,41 @@ public class RadarCharActivity extends AppCompatActivity {
         RadarChart radarChart = findViewById(R.id.radarChart);
 
         ArrayList<RadarEntry> Anzahl = new ArrayList<>();
-        Anzahl.add(new RadarEntry(400));
-        Anzahl.add(new RadarEntry(500));
-        Anzahl.add(new RadarEntry(600));
-        Anzahl.add(new RadarEntry(450));
-        Anzahl.add(new RadarEntry(700));
-        Anzahl.add(new RadarEntry(340));
-        Anzahl.add(new RadarEntry(1000));
+        Anzahl.add(new RadarEntry(5));
+        Anzahl.add(new RadarEntry(7));
+        Anzahl.add(new RadarEntry(10));
+        Anzahl.add(new RadarEntry(10));
+        Anzahl.add(new RadarEntry(20));
+        Anzahl.add(new RadarEntry(30));
+        Anzahl.add(new RadarEntry(50));
+        Anzahl.add(new RadarEntry(70));
+        Anzahl.add(new RadarEntry(100));
+        Anzahl.add(new RadarEntry(130));
+        Anzahl.add(new RadarEntry(170));
+        Anzahl.add(new RadarEntry(230));
 
         ArrayList<RadarEntry> Anzahl2 = new ArrayList<>();
-        Anzahl2.add(new RadarEntry(600));
-        Anzahl2.add(new RadarEntry(400));
-        Anzahl2.add(new RadarEntry(200));
-        Anzahl2.add(new RadarEntry(750));
-        Anzahl2.add(new RadarEntry(1000));
-        Anzahl2.add(new RadarEntry(840));
-        Anzahl2.add(new RadarEntry(900));
+        Anzahl2.add(new RadarEntry(110));
+        Anzahl2.add(new RadarEntry(120));
+        Anzahl2.add(new RadarEntry(130));
+        Anzahl2.add(new RadarEntry(140));
+        Anzahl2.add(new RadarEntry(160));
+        Anzahl2.add(new RadarEntry(170));
+        Anzahl2.add(new RadarEntry(190));
+        Anzahl2.add(new RadarEntry(210));
+        Anzahl2.add(new RadarEntry(220));
+        Anzahl2.add(new RadarEntry(240));
+        Anzahl2.add(new RadarEntry(260));
+        Anzahl2.add(new RadarEntry(280));
 
-        RadarDataSet radarDataSet = new RadarDataSet(Anzahl, "Anzahl");
+
+        RadarDataSet radarDataSet = new RadarDataSet(Anzahl, "Verkauf");
         radarDataSet.setColor(Color.RED);
         radarDataSet.setLineWidth(2f);
         radarDataSet.setValueTextColor(Color.RED);
         radarDataSet.setValueTextSize(14f);
 
-        RadarDataSet radarDataSet2 = new RadarDataSet(Anzahl2, "Anzah2");
+        RadarDataSet radarDataSet2 = new RadarDataSet(Anzahl2, "Spenden");
         radarDataSet2.setColor(Color.BLUE);
         radarDataSet2.setLineWidth(2f);
         radarDataSet2.setValueTextColor(Color.BLUE);
@@ -57,12 +68,12 @@ public class RadarCharActivity extends AppCompatActivity {
         radarData.addDataSet(radarDataSet);
         radarData.addDataSet(radarDataSet2);
 
-        String[] labels = {"2014", "2015" , "2016" , "2017" , "2018" ,"2019" ,"2020"};
+        String[] labels = {"2012", "2013" ,"2014", "2015" ,"2016", "2017" , "2018" , "2019" , "2020" ,"2021" ,"2022","2023"};
 
         XAxis xAxis = radarChart.getXAxis();
         xAxis.setValueFormatter(new IndexAxisValueFormatter(labels));
         radarChart.setData(radarData);
-        radarChart.getDescription().setText("Hier kann man eine Beschreibung hinzufügen");
+        radarChart.getDescription().setText("Schätzungen der Entwicklung des Secondhandmarktes\n");
 
 
     }

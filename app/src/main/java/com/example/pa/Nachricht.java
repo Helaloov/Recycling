@@ -2,6 +2,7 @@ package com.example.pa;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,11 +23,14 @@ public class Nachricht extends AppCompatActivity {
         mSubjekt =  (EditText) findViewById(R.id.subjektID);
         mMessage =  (EditText) findViewById(R.id.messageID);
         button = (Button) findViewById(R.id.button1);
+        final Intent HS = new Intent(this, Danke.class);
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 sendMail();
+                startActivity(HS);
             }
         });
     }

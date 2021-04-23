@@ -16,9 +16,12 @@
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="260dp"
-
-            android:textColor="@color/colorPrimary"
-            android:textSize="25sp"
+            android:backgroundTint="#F4DB8F"
+            android:shadowColor="#E45252"
+            android:text="Weltweiter Marktwert für Secondhand-Bekleidung von 2012 bis 2024 (in Milliarden US-Dollar)"
+            android:textAllCaps="true"
+            android:textColor="#5930A1"
+            android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="1dp" />
 
@@ -27,9 +30,12 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="280dp"
-
-            android:textColor="@color/colorPrimary"
-            android:textSize="25sp"
+            android:backgroundTint="#F4DB8F"
+            android:shadowColor="#E45252"
+            android:text="Schätzungen der Entwicklung des Secondhandmarktes in den kommenden Jahren"
+            android:textAllCaps="true"
+            android:textColor="#5930A1"
+            android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="1dp" />
 
@@ -38,8 +44,25 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
 
-            android:textColor="@color/colorPrimary"
-            android:textSize="25sp"
+            android:backgroundTint="#F4DB8F"
+            android:shadowColor="#E45252"
+            android:text="Was machen Menschen mit alter Kleidung, die Ihnen nicht mehr passt?"
+            android:textAllCaps="true"
+            android:textColor="#5930A1"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:backgroundTint="#F4DB8F"
+            android:shadowColor="#E45252"
+            android:text="Sortierung von Gebrauchtkleidung (Zahlen in % von ca. 1 Million Tonnen)"
+            android:textAllCaps="true"
+            android:textColor="#5930A1"
+            android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="1dp" />
     </LinearLayout>

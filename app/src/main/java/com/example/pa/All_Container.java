@@ -26,10 +26,10 @@ public class All_Container extends AppCompatActivity {
     private String currentSearchText = "";
     private SearchView searchView;
     private String[] Stadt = {
-            "Denzlingen, Container",
+            "Freiburg, Container",
             "Denzlingen, 2-Hand Shop",
             "Freiburg, Container",
-            "Freiburg, 2-Hand Shop",
+            "Emmendingen, 2-Hand Shop",
             "Waldkirch, Container",
             "Waldkirch, Container",
             "Freiburg, Container",
@@ -86,14 +86,18 @@ public class All_Container extends AppCompatActivity {
             "Freiburg, Container",
             "Freiburg, Container",
             "Freiburg, Container",
-            "Freiburg, Container",
-            "Freiburg, Container"
+            "Freiburg, 2-Hand Shop",
+            "Freiburg, 2-Hand Shop",
+            "Freiburg, 2-Hand Shop",
+            "Freiburg, 2-Hand Shop",
+            "Emmendingen, 2-Hand Shop",
+            "Emmendingen, 2-Hand Shop",
     };
     private String[] Address = {
-            "79211 Denzlingen,\nMusterstraße 1",
-            "79211 Denzlingen,\nMusterstraße 2",
-            "79098 Freiburg,\nMusterstraße 3",
-            "79098 Freiburg,\nMusterstraße 4",
+            "79115 Freiburg,\nAm Kirchacker 1",
+            "79211 Denzlingen,\nHauptstraße 163",
+            "79115 Freiburg,\nBadenweilerstr. 1",
+            "79312 Emmendingen,\nKarl-Friedrich-Straße 31 ",
             "79183 Waldkirch,\nLange Straße 118.",
             "79183 Waldkirch,\nSchlettstadtallee 9",
             "79106 Freiburg,\nColmarer Str. 1",
@@ -150,8 +154,14 @@ public class All_Container extends AppCompatActivity {
             "79098 Freiburg,\nHumboldtstr. 30",
             "79098 Freiburg,\nWilhelmstr. 2-4",
             "79114 Freiburg,\nUnterer Mühlenweg 55",
-            "79115 Freiburg,\nAm Kirchacker 1",
-            "79115 Freiburg,\nBadenweilerstr. 1",
+            "79098 Freiburg,\nSalzstraße 23 ",
+            "79098 Freiburg,\nLeopoldring 3A",
+            "79102 Freiburg,\nErwinstraße 3A",
+            "79098 Freiburg,\nMerianstraße 5 ",
+            "79312 Emmendingen,\nMarkgrafenstraße 18 ",
+            "79312 Emmendingen,\nAm Elzdamm 45 ",
+
+
 
 
 
@@ -159,18 +169,19 @@ public class All_Container extends AppCompatActivity {
 
     private String[] Anbieter = {
             "DRK",
+            "FAIRKAUF",
+            "DRK",
+            "Second Hand ",
+            "DRK",
+            "DRK",
+            "DRK",
+            "DRK",
+            "DRK",
+            "DRK",
+            "DRK",
+            "DRK",
             "Name des Geschäfts",
             "DRK",
-            "Name des Geschäfts",
-            "DRK",
-            "DRK",
-            "DRK",
-            "DRK",
-            "DRK",
-            "DRK",
-            "DRK",
-            "DRK",
-            "Name des Geschäfts",
             "DRK",
             "DRK",
             "DRK",
@@ -217,9 +228,12 @@ public class All_Container extends AppCompatActivity {
             "DRK",
             "DRK",
             "DRK",
-            "DRK",
-            "DRK",
-            "DRK"
+            "Schlepprock",
+            "Second Hand Exclusive ",
+            "Klamöttchen",
+            "Umkleide",
+            "FAIRKAUF",
+            "FAIRKAUF",
     };
     int[] image = {
             R.drawable.c ,
@@ -282,8 +296,13 @@ public class All_Container extends AppCompatActivity {
             R.drawable.c,
             R.drawable.c,
             R.drawable.c,
-            R.drawable.c,
-            R.drawable.c
+            R.drawable.s ,
+            R.drawable.s ,
+            R.drawable.s ,
+            R.drawable.s ,
+            R.drawable.s ,
+            R.drawable.s ,
+
     };
 
     private int white, darkGray, red;

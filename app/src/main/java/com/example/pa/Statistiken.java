@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Statistiken extends AppCompatActivity {
 
-    Button b1 , b2 ,b3;
+    Button b1, b2, b3, b4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,11 +17,13 @@ public class Statistiken extends AppCompatActivity {
 
         final Intent barchart = new Intent(this, BarChartActivity.class);
         final Intent piechart = new Intent(this, PieChartActivity.class);
+        final Intent piechart2 = new Intent(this, PieChartAk2.class);
         final Intent radarchart = new Intent(this, RadarCharActivity.class);
 
         b1 = (Button) findViewById(R.id.button1);
-        b2 = (Button) findViewById(R.id.button2);
-        b3 = (Button) findViewById(R.id.button3);
+        b3 = (Button) findViewById(R.id.button2);
+        b2 = (Button) findViewById(R.id.button3);
+        b4 = (Button) findViewById(R.id.button4);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +43,13 @@ public class Statistiken extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(radarchart);
+            }
+        });
+
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(piechart2);
             }
         });
 

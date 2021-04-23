@@ -13,26 +13,28 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
-public class PieChartActivity extends AppCompatActivity {
-
+public class PieChartAk2 extends AppCompatActivity {
+int[] CC = {Color.RED, Color.DKGRAY ,Color.GREEN, Color.GRAY, Color.BLUE , Color.MAGENTA };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pie_chart);
+        setContentView(R.layout.activity_pie_chart_ak2);
 
         PieChart pieChart = findViewById(R.id.pieChart);
 
         ArrayList<PieEntry> Anzahl = new ArrayList<>();
-        Anzahl.add(new PieEntry(57,"Container"));
-        Anzahl.add(new PieEntry(39,"Familie"));
-        Anzahl.add(new PieEntry(8,"2-H-shop"));
-        Anzahl.add(new PieEntry(30,"Freunde"));
-        Anzahl.add(new PieEntry(15,"Müll"));
+
+        Anzahl.add(new PieEntry(8,"Qualität 1"));
+        Anzahl.add(new PieEntry(32,"Qualität 2-3"));
+        Anzahl.add(new PieEntry(15,"Sonstiges"));
+        Anzahl.add(new PieEntry(11,"Abfall"));
+        Anzahl.add(new PieEntry(16,"Putzlappen"));
+        Anzahl.add(new PieEntry(18,"Recyclingstoffe"));
 
 
 
         PieDataSet pieDataSet = new PieDataSet(Anzahl, "");
-        pieDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
+        pieDataSet.setColors(CC);
         pieDataSet.setValueTextColor(Color.WHITE);
 
 
@@ -45,15 +47,10 @@ public class PieChartActivity extends AppCompatActivity {
         pieChart.setData(pieData);
 
 
-        pieChart.setCenterText("Zahlen in %");
-
-        pieChart.getDescription().setText("Was machen Menschen mit alter Kleidung, die Ihnen nicht mehr passt?");
-        pieChart.getDescription().setTextSize(11f);
+        pieChart.setCenterText("Zahlen in % von ca. 1 Million Tonnen");
+        pieChart.getDescription().setText("Sortierung von Gebrauchtkleidung");
+        pieChart.getDescription().setTextSize(10.5f);
         pieChart.animate();
-        pieChart.setEntryLabelColor(Color.BLACK);
-
-
-
-
+        pieChart.setEntryLabelColor(Color.YELLOW);
     }
 }

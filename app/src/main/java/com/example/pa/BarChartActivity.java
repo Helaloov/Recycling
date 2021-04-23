@@ -23,15 +23,21 @@ public class BarChartActivity extends AppCompatActivity {
         BarChart barChart = findViewById(R.id.barChart);
 
         ArrayList<BarEntry> Anzahl = new ArrayList<>();
-        Anzahl.add(new BarEntry(2015, 1200));
-        Anzahl.add(new BarEntry(2016, 1400));
-        Anzahl.add(new BarEntry(2017, 1500));
-        Anzahl.add(new BarEntry(2018, 1800));
-        Anzahl.add(new BarEntry(2019, 2000));
-        Anzahl.add(new BarEntry(2020, 1200));
-        Anzahl.add(new BarEntry(2021, 1600));
+        Anzahl.add(new BarEntry(2012,11));
+        Anzahl.add(new BarEntry(2013,12));
+        Anzahl.add(new BarEntry(2014,14));
+        Anzahl.add(new BarEntry(2015,15));
+        Anzahl.add(new BarEntry(2016,18));
+        Anzahl.add(new BarEntry(2017,20));
+        Anzahl.add(new BarEntry(2018,24));
+        Anzahl.add(new BarEntry(2019,28));
+        Anzahl.add(new BarEntry(2020,33));
+        Anzahl.add(new BarEntry(2021,39));
+        Anzahl.add(new BarEntry(2022,46));
+        Anzahl.add(new BarEntry(2023,55));
+        Anzahl.add(new BarEntry(2024,64));
 
-        BarDataSet barDataSet = new BarDataSet(Anzahl, "Anzahl");
+        BarDataSet barDataSet = new BarDataSet(Anzahl, "Weltweiter Marktwert für Secondhand-Bekleidung von 2012 bis 2024 ");
         barDataSet.setColors(ColorTemplate.MATERIAL_COLORS);
         barDataSet.setValueTextColor(Color.BLACK);
         barDataSet.setValueTextSize(16f);

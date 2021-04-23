@@ -14,6 +14,7 @@ public class Abschnitt2_Kleidung extends AppCompatActivity {
     Button Quiz;
     Button Umfrage;
     Button Allg_Inf;
+    Button Bewertung;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,12 +25,16 @@ public class Abschnitt2_Kleidung extends AppCompatActivity {
         final Intent statistiken = new Intent(this, Statistiken.class);
         final Intent quiz = new Intent(this, Quiz.class);
         final Intent umfrage = new Intent(this, Umfrage.class);
+        final Intent bewertung = new Intent(this, Meinung.class);
+
 
         H_Fragen = (Button) findViewById(R.id.button1);
+        Umfrage = (Button) findViewById(R.id.button2);
         Allg_Inf = (Button) findViewById(R.id.button3);
         Statistiken = (Button) findViewById(R.id.button4);
         Quiz    = (Button) findViewById(R.id.button5);
-        Umfrage = (Button) findViewById(R.id.button6);
+        Bewertung = (Button) findViewById(R.id.button6);
+
 
         H_Fragen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +70,14 @@ public class Abschnitt2_Kleidung extends AppCompatActivity {
                 startActivity(umfrage);
             }
         });
+
+        Bewertung.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(bewertung);
+            }
+        });
+
 
 
     }

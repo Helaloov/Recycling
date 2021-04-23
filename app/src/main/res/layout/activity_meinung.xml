@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3AE48"
+    tools:context=".Meinung">
+
+    <TextView
+        android:id="@+id/textView"
+        android:paddingLeft="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wie werden Sie unsere App bewerten?"
+        android:paddingTop="100px"
+        android:paddingBottom="75px"
+        android:textSize="23dp"
+        android:textColor="#0C0C0C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:paddingLeft="30px"
+
+        android:id="@+id/groupOne"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="50px"
+            android:onClick="onRadioButtonClicked"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="50px"
+            android:onClick="onRadioButtonClicked"
+            android:textColor="#0C0C0C"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="50px"
+            android:onClick="onRadioButtonClicked"
+            android:textColor="#0C0C0C"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="50px"
+            android:onClick="onRadioButtonClicked"
+            android:textColor="#0C0C0C"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="50px"
+            android:onClick="onRadioButtonClicked"
+            android:textColor="#0C0C0C"
+            android:text="5" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/dd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="120px"
+        android:paddingBottom="25px"
+        android:text="Was sollen wir verbessern? (optional)"
+        android:textColor="#0C0C0C"
+        android:textSize="20dp"
+        android:paddingLeft="30px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupOne" />
+
+    <EditText
+        android:id="@+id/zusatz"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:layout_margin="20dp"
+        android:background="#EDE9C2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dd" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#EDE9C2"
+        android:padding="10dp"
+        android:text="Senden"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zusatz"></Button>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

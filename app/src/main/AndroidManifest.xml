@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Allgemeine_Infos"></activity>
+        <activity android:name=".Danke"></activity>
+        <activity android:name=".Meinung" />
+        <activity android:name=".PieChartAk2" />
+        <activity android:name=".Allgemeine_Infos" />
         <activity android:name=".HaufigeFragen" />
         <activity android:name=".BarChartActivity" />
         <activity android:name=".RadarCharActivity" />
