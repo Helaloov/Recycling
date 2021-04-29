@@ -1,7 +1,9 @@
+
+
 .app {
   font-family: "Avenir Next", sans-serif;
   color: #031d3d;
-  padding-bottom: 152px;
+  padding-bottom: 1px;
 }
 
 .container {
@@ -15,7 +17,9 @@
 h1 {
   margin-top: 35px;
   margin-bottom: 15px;
-  font-size: 32px;
+
+  font-size: 30px;
+  margin-left: 10px;
   font-family: inherit;
 }
 
@@ -46,7 +50,7 @@ button {
   color: #031d3d;
 }
 .accordions__header {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 600;
   background-color: #f0f0f0;
   position: relative;
@@ -125,7 +129,7 @@ button {
   transform: translateY(38px);
 }
 .accordions__content--expanded {
-  max-height: 200vh;
+  max-height: 400vh;
   opacity: 1;
   padding-bottom: 76px;
   transform: none;

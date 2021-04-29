@@ -477,8 +477,7 @@ public class All_Container extends AppCompatActivity {
         selectedFilters.add("all");
         unSelectAllFilterButtons();
         lookSelected(allButton);
-        shapeAdapter adapter = new shapeAdapter(getApplicationContext(), 0, shapeList);
-        listView.setAdapter(adapter);
+        filterList(", ");
     }
 
 
@@ -486,6 +485,7 @@ public class All_Container extends AppCompatActivity {
     {
         selectedFilters.clear();
         filterList("container");
+        selectedFilters.add("all");
         lookSelected(triangleButton);
         lookUnSelected(allButton);
         lookUnSelected(squareButton);
@@ -494,6 +494,7 @@ public class All_Container extends AppCompatActivity {
     public void Geschaeft(View view)
     {
         selectedFilters.clear();
+        selectedFilters.add("all");
         filterList("shop");
         lookSelected(squareButton);
         lookUnSelected(allButton);

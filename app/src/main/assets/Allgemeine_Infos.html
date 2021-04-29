@@ -12,80 +12,123 @@
 <div class="app" id="app">
   <div class="accordions">
     <div class="container">
-     <center> <h1>Allgemeine Infos über</br>  Second-Hand</h1></center>
+     <center> <h1 >Allgemeine Infos</br> über Second-Hand</h1></center>
     </div>
     <section class="accordions__accordion">
       <div class="accordions__header">
         <div class="accordions__container container">
-          <h3 class="accordions__title">Teningen</h3>
+          <h3 class="accordions__title">Allgemeine Definition</h3>
           <button class="accordions__button" v-on:click="toggleAccordion('Teningen')" v-bind:class="{ 'accordions__button--active': isOpen('Teningen') }">
             <div class="accordions__icon">+</div>
           </button>
         </div>
       </div>
       <div class="container">
-        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Teningen') }"><p>Teningen (alemannisch Däninge) ist eine Gemeinde im Südwesten Baden-Württembergs. Sie liegt rund drei Kilometer westlich der Kreisstadt Emmendingen und rund 20 Kilometer nördlich von Freiburg im Breisgau.
+        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Teningen') }"><p>Als Secondhand bezeichnet man alle Produkte, welche aus zweiter Hand sind bzw. gebraucht wurden.
+          Der Begriff umschließt Produkte der Kategorie Bekleidung, Elektronik und Möbel.
         </p></div>
       </div>
     </section>
     <section class="accordions__accordion">
       <div class="accordions__header">
         <div class="accordions__container container">
-          <h3 class="accordions__title">Hamster</h3>
+          <h3 class="accordions__title">Recycling</h3>
           <button class="accordions__button" v-on:click="toggleAccordion('Hamster')" v-bind:class="{ 'accordions__button--active': isOpen('Hamster') }">
             <div class="accordions__icon">+</div>
           </button>
         </div>
       </div>
       <div class="container">
-        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Hamster') }"><p>Die Hamster (Cricetinae) sind eine zu den Wühlern gehörende Unterfamilie der Mäuseartigen mit etwa 20 Arten.
-
-          Ihr Verbreitungsgebiet sind trockene und halbtrockene Gebiete Eurasiens. In Mitteleuropa kommt nur der Feldhamster vor. Fossil sind Hamster seit dem mittleren Miozän aus dem nördlichen Afrika und aus Eurasien bekannt. Die meisten Hamster sind nicht gefährdet. Eine Ausnahme bildet der Syrische Goldhamster, der wie einige andere Hamster als Versuchs- und Heimtier von Bedeutung ist.
-
-          Die maus- bis rattengroßen Hamster sind von wühlmausartiger Gestalt, jedoch meist mit kurzem Schwanz. Sie besitzen in jeder Kieferhälfte drei bewurzelte Backenzähne, deren Höcker in zwei Längsreihen angeordnet und durch Schmelzleisten meist kreuzweise miteinander verbunden sind. Die innen liegenden Backentaschen dienen dem Transport der Nahrung.
+        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Hamster') }"><p>Beim Recycling (=> Müllverwertung), wird aus dem Abfallprodukt bzw. deren Ausgangsmaterialien Sekundärstoffe erzeugt.
+          Beispiel:
+          Aus 16 Flaschen wird ein Fleecepullover
+          Um aus alten PET-Flaschen Polyesterfäden herzustellen, müssen die Plastikflaschen-Flakes zunächst eingeschmolzen, eingefärbt und zu dünnen Fäden verarbeitet werden. Polyester ist ein vielfältig einsetzbarer Kunststoff. Für einen Fleecepullover werden etwa 16 Flaschen benötigt – ähnlich sieht es bei Wolldecken aus, die zu 100 Prozent aus Polyester bestehen. Textilien aus Polyesterfasern können sich leicht elektrisch aufladen, sind aber nach Angaben des Bundesinstituts für Risikobewertung (BfR) unbedenklich. Weil Fleeceprodukte leicht entzündlich seien, bestehe allerdings eine hohe Brandgefahr.
         </p></div>
       </div>
     </section>
     <section class="accordions__accordion">
       <div class="accordions__header">
         <div class="accordions__container container">
-          <h3 class="accordions__title">Syrien</h3>
+          <h3 class="accordions__title">Upcycling (Stoffliche Aufwertung)</h3>
           <button class="accordions__button" v-on:click="toggleAccordion('Syrien')" v-bind:class="{ 'accordions__button--active': isOpen('Syrien') }">
             <div class="accordions__icon">+</div>
           </button>
         </div>
       </div>
       <div class="container">
-        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Syrien') }"><p>Syrien (amtlich Syrische Arabische Republik, arabisch الجمهورية العربية السورية al-Dschumhūriyya al-ʿarabiyya as-sūriyya) ist ein Staat in Vorderasien und Teil des Maschrek. Syrien grenzt im Süden an Israel und Jordanien, im Westen an den Libanon und das Mittelmeer, im Norden an die Türkei und im Osten an den Irak. Die Insel Zypern befindet sich etwa 125 km Luftlinie von der syrischen Küste entfernt. Mit rund 185.000 km² ist Syrien ungefähr halb so groß wie Deutschland. Im Jahr 2010 lebten knapp 21 Mio. Menschen im Land, die meisten in Aleppo, der Hauptstadtregion von Damaskus, in Homs, Hama und Latakia.
-        </p></div>
+        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Syrien') }">
+          <p>Hier werden Abfallprodukte oder nutzlose Stoffe in neuwertige Produkte umgewandelt.
+            Beispiel:
+            Früher LKW-Plane, jetzt Umhängetasche
+            Das wohl bekannteste Upcycling-Beispiel: Taschen aus LKW-Planen und Rettungswesten. Ausrangierte LKW-Planen und Rettungswesten eignen sich optimal zur Weiterverarbeitung für langlebige Umhänge-, Notebook- oder Sporttaschen, da das Material ist extrem robust und bietet zudem ein großes Farb- und Musterspektrum. Eben noch schützten die riesigen Planen Transportgüter vor Sonne und Sturm nun dient sie Trinkflaschen, Büchern und Handys als Schutz vor eben diesen Wettereinflüssen.
+          </p></div>
       </div>
     </section>
     <section class="accordions__accordion">
       <div class="accordions__header">
         <div class="accordions__container container">
-          <h3 class="accordions__title">Hamah</h3>
+          <h3 class="accordions__title">Downcycling (Stoffliche Abwertung)</h3>
           <button class="accordions__button" v-on:click="toggleAccordion('Hamah')" v-bind:class="{ 'accordions__button--active': isOpen('Hamah') }">
             <div class="accordions__icon">+</div>
           </button>
         </div>
       </div>
       <div class="container">
-        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Hamah') }"><p>Die Stadt liegt am Orontes im Zentrum der mittelsyrischen Ackerbauebene an der Fernstraße zwischen Aleppo und Damaskus. Sie gehört zu den ältesten durchgehend besiedelten Städten Syriens. Die Einwohner Hamas stehen in dem Ruf, islamisch-konservativ zu sein.
-        </p></div>
+        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Hamah') }">
+          <p>Hierbei handelt es sich ebenfalls um eine Art der Wieder- oder Weiterverwendung von Müll, mit dem Ziel das betroffene Materialien durch den Prozess an Qualität verlieren um ein günstigeres Endprodukt zu formen.
+            Beispiel:
+            Ein weiteres Beispiel sind Altkleider, die nicht mehr tragbar sind und daher zu Putzlappen verarbeitet werden oder in geschredderter Form als Dämmmaterial zum Einsatz kommen, zum Beispiel in der Automobilindustrie.
+          </p></div>
       </div>
     </section>
     <section class="accordions__accordion">
       <div class="accordions__header">
         <div class="accordions__container container">
-          <h3 class="accordions__title">Tesla</h3>
+          <h3 class="accordions__title">Export von Altkleidern weltweit</h3>
           <button class="accordions__button" v-on:click="toggleAccordion('Tesla')" v-bind:class="{ 'accordions__button--active': isOpen('Tesla') }">
             <div class="accordions__icon">+</div>
           </button>
         </div>
       </div>
       <div class="container">
-        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Tesla') }"><p>Tesla, Inc. (bis 1. Februar 2017 Tesla Motors) ist ein US-amerikanisches Unternehmen, das Elektroautos sowie Stromspeicher- und Photovoltaikanlagen produziert und vertreibt. Als Ziel des Unternehmens wird „die Beschleunigung des Übergangs zu nachhaltiger Energie“ genannt.[2] Der Firmenname ist an den Physiker und Erfinder Nikola Tesla angelehnt. Die Nutzungsrechte für die Marke Tesla erhielt das Unternehmen nach einer Übereinkunft mit der tschechischen Tesla Holding nach einem Markenrechtsstreit im Jahr 2010.[3]
-        </p></div>
+        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('Tesla') }">
+          <p>70 Prozent der Weltbevölkerung sind auf gebrauchte Kleidung angewiesen. Textilien aus dem Textilrecycling in Deutschland sind weltweit gefragt. In den Herkunfts- und den Empfängerländern zieht die Wiederverwendung von Altkleidern viele positiven Effekte nach sich. Menschen werden mit hochwertiger Kleidung versorgt, Arbeitssuchende finden Beschäftigungsmöglichkeiten in der Textilverwertung, Umwelt und Ressourcen werden geschont.
+          </p></div>
+      </div>
+    </section>
+
+    <section class="accordions__accordion">
+      <div class="accordions__header">
+        <div class="accordions__container container">
+          <h3 class="accordions__title">Secondhand ist sinnvoll</h3>
+          <button class="accordions__button" v-on:click="toggleAccordion('shs')" v-bind:class="{ 'accordions__button--active': isOpen('shs') }">
+            <div class="accordions__icon">+</div>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="accordions__content rich-text" v-bind:class="{ 'accordions__content--expanded': isOpen('shs') }">
+          <br>Secondhand ist sinnvoll, da: </br>
+          </br> <b> 1. weniger Abfall:</b> </br></br>
+            In den Restabfall geworfene Kleidung und Schuhe sorgen nicht nur für mehr Abfall und höhere Entsorgungskosten, sie gehen auch für immer verloren. Statt in den Stoffkreislauf zurückzugelangen, werden sie verbrannt.
+            </br>
+          </br> <b> 2. mehr Humanität </b></br></br>
+            Sammlung und Verwertung von Altkleidern gehört zu den ökonomisch sinnvollen Möglichkeiten, um den weltweiten Bedarf an Kleidung und Textilien zu decken und dabei noch Arbeitsplätze zu schaffen.
+          </br>
+          </br><b>  3. mehr Nachhaltigkeit </b></br></br>
+          Textilrecycling ist äußerst rohstoffschonend und dadurch aus ökologischer Sicht eine Lösung mit Perspektive. Was weiterverwendet werden kann, muss nicht unter Einsatz von natürlichen Ressourcen und Energie neu produziert werden.
+          </br>
+          </br> <b> 4. kostengünstigere Kleidung </b></br></br>
+          Die Kleidung ist oftmals günstiger, da sie bereits getragen wurde. Ebenfalls verkauft man die Ware nicht aus Kostenmotiven, eher aus dem Grund die Umwelt zu schonen und die Kleidung länger im Textilkreislauf zu erhalten, was eine generelle „Preisbremse“ ist.
+          </br>
+          </br><b> 5. spart Wasser </b></br></br>
+          Die wachsende Textilindustrie führt weltweit zur Verknappung von Trinkwasserressourcen. Herstellung von Baumwolle ist wasserintensiv. Nach Berechnungen des Statistischen Bundesamtes beläuft sich der Wasserbedarf von einer Tonne Rohbaumwolle auf 3600 m3, in Bezug auf die daraus hergestellte Baumwollfaser sogar auf 8500 m3.
+
+
+
+
+          </p>
+        </div>
       </div>
     </section>
   </div>

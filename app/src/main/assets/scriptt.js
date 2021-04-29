@@ -10,6 +10,7 @@ new Vue({
       'Hamster': { isOpen: false },
       'Syrien': { isOpen: false },
       'Hamah': { isOpen: false },
+      'shs': { isOpen: false },
       'Tesla': { isOpen: false } } },
 
 
