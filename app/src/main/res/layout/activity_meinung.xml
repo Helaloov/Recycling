@@ -37,7 +37,7 @@
             android:id="@+id/a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="50px"
+            android:padding="30px"
             android:onClick="onRadioButtonClicked"
             android:text="1" />
 
@@ -45,7 +45,7 @@
             android:id="@+id/b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="50px"
+            android:padding="30px"
             android:onClick="onRadioButtonClicked"
             android:textColor="#0C0C0C"
             android:text="2" />
@@ -54,7 +54,7 @@
             android:id="@+id/c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="50px"
+            android:padding="30px"
             android:onClick="onRadioButtonClicked"
             android:textColor="#0C0C0C"
             android:text="3" />
@@ -63,7 +63,7 @@
             android:id="@+id/d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="50px"
+            android:padding="30px"
             android:onClick="onRadioButtonClicked"
             android:textColor="#0C0C0C"
             android:text="4" />
@@ -72,7 +72,7 @@
             android:id="@+id/e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="50px"
+            android:padding="30px"
             android:onClick="onRadioButtonClicked"
             android:textColor="#0C0C0C"
             android:text="5" />
